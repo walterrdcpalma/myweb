@@ -22,6 +22,14 @@ i:hover {
   color: #6b8f71;
 }
 
+#container-conteudo-secundario2 {
+  display: none;
+}
+
+#container-conteudo-secundario3 {
+  display: none;
+}
+
 #container-principal {
   background-color: #aad2ba;
   width: 1000px;

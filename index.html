@@ -1,81 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- <link href="css/bootstrap-theme.css" rel="stylesheet" /> -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link href="css/styles.css" rel="stylesheet" />
-  <!-- <link href="css/bootstrap-theme.css" rel="stylesheet" /> -->
+    <title>Document</title>
+  </head>
 
-  <title>Document</title>
-</head>
-
-<body>
-  <div id="container-principal" class="container">
-    <div id="container-titulo" class="container">
-      <h4>WALTER PALMA</h4>
-      <div id="container-titulo-imagens">
-        <a href="#"><i class="fa fa-facebook-square"></i></a>
-        <a href="#"><i class="fa fa-instagram"></i></a>
-        <a href="#"><i class="fa fa-github"></i></a> 
-      </div>
-    </div>
-
-    <div id="container-conteudo" class="container">
-      <div id="container-menu" class="col-md-2">
-        <div id="menu" class="col-md-4">
-          <a id="img-sobre" href="#"><img src="img/about.png" class="img-fluid" alt="Responsive image"></a>
-          <a id="img-projetos" href="#"><img src="img/projetos.png" class="img-fluid" alt="Responsive image"></a>
-          <a id="img-contacto" href="#"><img src="img/contacto.png" class="img-fluid" alt="Responsive image"></a>
+  <body>
+    <div id="container-principal" class="container">
+      <div id="container-titulo" class="container">
+        <h4>WALTER PALMA</h4>
+        <div id="container-titulo-imagens">
+          <a
+            onclick="window.open ('https://www.facebook.com/walter.palma.3990', ''); return false"
+            href="javascript:void(0);"
+            ><i class="fa fa-facebook-square"></i
+          ></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
         </div>
-
       </div>
-      <div id="container-conteudo-secundario" class="col-md-10">
-        <div id="container-sobre" class="col-md-6">
-          <div id="container-sobre-titulo">
-            <h3>Sobre Mim</h3>
-          </div>
-          <div id="container-sobre-texto">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt, neque ut euismod scelerisque,
-              neque lacus euismod odio, at cursus sapien orci egestas nibh. Etiam feugiat, enim ut mattis facilisis,
-              eros purus vehicula felis, sit amet pulvinar dolor diam a urna. Praesent faucibus tempor mauris vitae
-              commodo. Aenean mauris felis, lobortis sed volutpat ac, efficitur non massa. Donec pulvinar suscipit
-              scelerisque. </p>
-          </div>
 
-
+      <div id="container-conteudo" class="container">
+        <div id="container-menu" class="col-md-2">
+          <div id="menu" class="col-md-4">
+            <a id="img-sobre" href="javascript:sobre()"
+              ><img
+                src="img/about.png"
+                class="img-fluid"
+                alt="Responsive image"
+            /></a>
+            <a id="img-projetos" href="javascript:projetos()"
+              ><img
+                src="img/projetos.png"
+                class="img-fluid"
+                alt="Responsive image"
+            /></a>
+            <a id="img-contacto" href="javascript:contactos()"
+              ><img
+                src="img/contacto.png"
+                class="img-fluid"
+                alt="Responsive image"
+            /></a>
+          </div>
         </div>
-        <div id="container-skills" class="col-md-6">
-          <div id="container-skills-conteudo">
-            <div id="general-skills"><h3>General skills</h3><p>domínio de x linguagens de programação</p></div>
-            <div id="imagens-skills">
-              <div><img id="imgskill1" src="img/html.png" class="img-fluid" alt="Responsive image"><span>--------------> HTML</span></div>
-            <div><img  id="imgskill2" src="img/css.png" class="img-fluid" alt="Responsive image"><span>-----------------> CSS</span></div>
-          <div> <img  id="imgskill3" src="img/js.png" class="img-fluid" alt="Responsive image"><span>--------> Javascript</span></div>
-              <!-- <img src="..." class="img-fluid" alt="Responsive image">
+        <div id="container-conteudo-secundario" class="col-md-10">
+          <div id="container-sobre" class="col-md-6">
+            <div id="container-sobre-titulo">
+              <h3>Sobre Mim</h3>
+            </div>
+            <div id="container-sobre-texto">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                tincidunt, neque ut euismod scelerisque, neque lacus euismod
+                odio, at cursus sapien orci egestas nibh. Etiam feugiat, enim ut
+                mattis facilisis, eros purus vehicula felis, sit amet pulvinar
+                dolor diam a urna. Praesent faucibus tempor mauris vitae
+                commodo. Aenean mauris felis, lobortis sed volutpat ac,
+                efficitur non massa. Donec pulvinar suscipit scelerisque.
+              </p>
+            </div>
+          </div>
+          <div id="container-skills" class="col-md-6">
+            <div id="container-skills-conteudo">
+              <div id="general-skills">
+                <h3>General skills</h3>
+                <p>domínio de x linguagens de programação</p>
+              </div>
+              <div id="imagens-skills">
+                <div>
+                  <img
+                    id="imgskill1"
+                    src="img/html.png"
+                    class="img-fluid"
+                    alt="Responsive image"
+                  /><span>--------------> HTML</span>
+                </div>
+                <div>
+                  <img
+                    id="imgskill2"
+                    src="img/css.png"
+                    class="img-fluid"
+                    alt="Responsive image"
+                  /><span>-----------------> CSS</span>
+                </div>
+                <div>
+                  <img
+                    id="imgskill3"
+                    src="img/js.png"
+                    class="img-fluid"
+                    alt="Responsive image"
+                  /><span>--------> Javascript</span>
+                </div>
+                <!-- <img src="..." class="img-fluid" alt="Responsive image">
               <img src="..." class="img-fluid" alt="Responsive image">
               <img src="..." class="img-fluid" alt="Responsive image"> -->
+              </div>
             </div>
-
           </div>
-
+        </div>
+        <div id="container-conteudo-secundario2" class="col-md-10">
+          Projetos
+        </div>
+        <div id="container-conteudo-secundario3" class="col-md-10">
+          Contactos
         </div>
       </div>
-
-
-
     </div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="js/bootstrap.min.js"></script>
-</body>
-
+    <script src="app.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
