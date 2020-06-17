@@ -22,14 +22,6 @@ i:hover {
   color: #6b8f71;
 }
 
-#container-conteudo-secundario2 {
-  display: none;
-}
-
-#container-conteudo-secundario3 {
-  display: none;
-}
-
 #container-principal {
   background-color: #aad2ba;
   width: 1000px;
@@ -240,6 +232,16 @@ div #container-titulo h4:hover:after {
 
 #container-conteudo-secundario #container-skills #container-skills-conteudo #imagens-skills #imgskill1 {
   width: 55px;
+}
+
+#container-conteudo-secundario2 {
+  display: none;
+  padding: 0;
+}
+
+#container-conteudo-secundario3 {
+  display: none;
+  padding: 0;
 }
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
